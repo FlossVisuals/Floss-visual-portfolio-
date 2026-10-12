@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
      <h2>Home</h2>
      <p>Welcome to my student profile website. This website tells you a lot about me, my skills, and my learning goals</p>
      <br><br>
-     <button>Learn More</button>
+     <button id="learn-more">Learn More</button>
    </section>
    
    <!-- About Section -->
@@ -87,13 +87,31 @@
    <section id="contact" class="section">
      <h2>Contact Us</h2>
      
-     <form>
-       <input type="text" placeholder="Your name">
-       <input type="text" placeholder="Your Email">
-       <textarea type="text" placeholder="Your Message"></textarea>
-       <br><br>
+     <form id="contact-form">
+       <input
+       type="text"
+       id="name"
+       name="name"
+       placeholder="Your Name"
+       required
+       >
+       <input type="text"
+       id="email"
+       name="email"
+       placeholder="Your Email"
+       required
+       >
+       <textarea 
+       id="message"
+       name="message"
+       placeholder="Your Message"
+       required
+       ></textarea>
+      
        
-       <button type="submit">Submit</button>
+       <button type="submit">Send Message</button>
+       
+       <p id="form-message" aria-live="polite"></p>
      </form>
    </section>
    
@@ -102,5 +120,5 @@
      <p>&copy; 2026 My School. All Reserved</p>
    </footer>
 </body>
-
+<script src="script.js"></script>
 </html>

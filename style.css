@@ -78,18 +78,24 @@ form button{
 .skill-cards{
   display: grid;
   gap: 25px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .skill-card{
   background: #FFFFFF;
   border: 1px solid #CDE5DC;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
-  width: 165px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(15, 59, 134, 0.08);
+  transition: transform 0.3s ease;
 }
 .skill-card h3{
   color: #0F3B86;
   margin-bottom: 10px;
+}
+.skill-card:hover{
+  transform: translateY(-5px);
 }
 
 /* Form Buttons */
@@ -102,11 +108,13 @@ form textarea{
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border: 1px solid #ccc;
-  border-left: 5px;
+  border: 1px solid #cccccc;
+  font-family: inherit;
+  font-size: 16px;
 }
 form textarea{
   height: 120px;
+  resize: vertical;
 }
 
 /* Footer */
@@ -119,24 +127,49 @@ footer{
 }
 
 /* Responsive Design */
+
+/* Tablet */
 @media (max-width: 768px){
   
-  body{
-    background-color: #DADDFF;
-    text-align: center;
-  }
-  
+ .skill-cards{
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+ }
+ 
+ .hero{
+   padding: 70px 20px;
+ }
+ 
+ .hero h2{
+   font-size: 32px;
+ }
+}
+
+/* Mobile phones */
+@media (max-width: 480px){
   .skill-cards{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   
   nav{
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
   
   nav a{
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    margin: 0;
+  }
+  
+  .section{
+    padding: 35px 15px;
+  }
+  
+  .hero{
+    padding: 50px 15px;
+  }
+  
+  .hero h2{
+    font-size: 28px;
   }
 }
