@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* General */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EAF2FF;
+  color: #818A99;
+}
+
+/* Header */
+header{
+  background-color: #0F3B86;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+header h1{
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Navigation */
+nav{
+  background: #062E73;
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Home Section */
+.hero{
+  background-color: #ADCCFF;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h2{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.hero button, 
+form button{
+ background: #0F3B86;
+ color: white;
+ padding: 12px 15px;
+ margin-top: 20px;
+ border: none;
+ border-radius: 5px;
+ margin: auto;
+ cursor: pointer;
+}
+/* Sections */
+.section{
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.section h2{
+  color: #0F3B86;
+  margin-bottom: 20px;
+}
+.section h3{
+  text-align: center;
+}
+
+/* Skill cards */
+.skill-cards{
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 2fr 1fr;
+}
+.skill-card{
+  background: #FFFFFF;
+  border: 1px solid #CDE5DC;
+  border-radius: 5px;
+  padding: 20px;
+  width: 165px;
+}
+.skill-card h3{
+  color: #0F3B86;
+  margin-bottom: 10px;
+}
+
+/* Form Buttons */
+form{
+  max-width: 500px;
+  margin: auto;
+}
+form input,
+form textarea{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-left: 5px;
+}
+form textarea{
+  height: 120px;
+}
+
+/* Footer */
+footer{
+  background: #062E73;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+  
+  body{
+    background-color: #DADDFF;
+    text-align: center;
+  }
+  
+  .skill-cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  nav{
+    flex-direction: column;
+  }
+  
+  nav a{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
