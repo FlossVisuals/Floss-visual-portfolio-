@@ -11,6 +11,7 @@ backToTop.className = "back-to-top";
 
 document.body.appendChild(backToTop);
 
+
 // show the button when scrolling
 window.onscroll = function () {
   if (window.scrollY > 300) {
