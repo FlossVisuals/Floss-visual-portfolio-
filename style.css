@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Body */
+body{
+  background-color: #F8FAFC;
+  color: #1E2948;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+/* Header */
+header{
+  background-color: #0F172A;
+  color: white;
+  padding:30px 20px;
+  text-align: center;
+}
+header h1{
+  color: #2DD4BF;
+}
+header p{
+  color: #E2E8F0;
+}
+/* Navigation */
+nav{
+  background-color: #164E63;
+  padding: 15px;
+  text-align: center;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+nav a:hover{
+  color: #2DD4BF;
+}
+/* Hero */
+.hero{
+  background: linear-gradient(135deg, #0F172A, #164E63);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+.hero h2{
+  color: #2DD4BF;
+  font-size: 40px;
+}
+.hero p{
+  color: #F8FAFC;
+  font-size: 18px;
+}
+/* Section */
+.section {
+  background-color: #F8FAFC;
+  padding: 40px 20px;
+}
+.section h2{
+  color: #0F766E;
+}
+.section p{
+  color: #334155;
+}
+/* Skill Cards */
+.skill-card{
+  background-color: #FFFFFF;
+  border: 1px solid #CCFBF1;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+.skill-card h3{
+  color: #0F766E;
+}
+.skill-card p{
+  color: #475569;
+}
+/* Goal Section*/
+.section-goals{
+  background-color: #ECFEFF;
+  padding: 40px 20px;
+}
+.section-goals h2{
+  color: #0F766E;
+  margin-bottom: 25px;
+}
+.section-goals h4{
+  background-color: #FFFFFF;
+  color: #0F766E;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border-left: 6px solid #2DD4BF;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.section-goals p{
+  color: #334155;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+/* Contact Section */
+.section-contact{
+  background-color: #0F172A;
+  color: white;
+  padding: 50px 20px;
+}
+.section-contact h3{
+  color: #2DD4BF;
+}
+.section-contact p{
+  color: #E2E8F0;
+  margin: 10px 0;
+}
+.section-contact strong{
+  color: #5EEADA;
+}
+.section-contact a{
+  color: #2DD4BF;
+  text-decoration: none;
+  font-weight: bold;
+}
+.section-contact a:hover{
+  color: #5EEADA;
+}
+/* Back To Top */
+.back-to-top{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #14B8A6;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 04px 10px rgba(15, 23, 42, 0.3);
+  .back-to-top:hover{
+    background-color: #0F766E;
+  }
+}
